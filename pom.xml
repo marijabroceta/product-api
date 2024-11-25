@@ -110,8 +110,7 @@
 						<uri>https://anypoint.mulesoft.com</uri>
 						<provider>MC</provider>
 						<target>Cloudhub-US-East-2</target>
-						<username>${username}</username>
-						<password>${password}</password>
+						<server>MuleRepository</server>
 						<muleVersion>4.8.0</muleVersion>
 						<integrations>
 							<services>
