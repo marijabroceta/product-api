@@ -66,6 +66,8 @@
 								<replicas>1</replicas>
 								<vCores>0.1</vCores>
 								<applicationName>product-api-test</applicationName>
+								<username>${username}</username>
+								<password>${password}</password>
 								<properties>
 									<env>test</env>
 									<api.id>20079992</api.id>
