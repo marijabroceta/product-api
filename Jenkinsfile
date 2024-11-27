@@ -4,7 +4,7 @@ pipeline{
 	stages{
 		stage('Build'){
 			steps{
-				bat 'mvn clean install'
+				bat 'mvn -B -U -e -V clean install -DskipTests'
 			}
 		}
 		stage('Test'){
@@ -13,12 +13,9 @@ pipeline{
 			}
 		}
 		stage(‘Deployment’){
-			environment{
-				ENVIRONMENT = 'DEV'
-				APP_NAME = ''
-			}
+		
 			steps{
-				bat 'mvn deploy -DmuleDeploy'
+				bat 'mvn -B -U -e -V deploy -DmuleDeploy -DskipTests'
 			}
 		}
 	}
