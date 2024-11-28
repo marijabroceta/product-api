@@ -35,8 +35,8 @@
 								<properties>
 									<env>dev</env>
 									<api.id>20079903</api.id>
-									<anypoint.platform.client_id>c1376c4381a74928b1683cfd2118546a</anypoint.platform.client_id>
-									<anypoint.platform.client_secret>F9a490065F3C433c97507d06dcC3Dc67</anypoint.platform.client_secret>
+									<anypoint.platform.client_id>${anypoint.platform.client_id}</anypoint.platform.client_id>
+									<anypoint.platform.client_secret>${anypoint.platform.client_secret}</anypoint.platform.client_secret>
 								</properties>
 								<deploymentSettings>
 									<generateDefaultPublicUrl>true</generateDefaultPublicUrl>
@@ -67,7 +67,6 @@
 								<replicas>1</replicas>
 								<vCores>0.1</vCores>
 								<applicationName>product-api-test</applicationName>
-
 								<properties>
 									<env>test</env>
 									<api.id>20079992</api.id>
